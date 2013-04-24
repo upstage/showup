@@ -3,7 +3,7 @@
 > Very basic jQuery plugin for hiding a navbar when scolling down, and showing it when scrolling up.
 
 
-See a live example.
+See a [live example](http://jonschlinkert.github.io/showup).
 
 
 ## Author
