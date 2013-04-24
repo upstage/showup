@@ -1,0 +1,21 @@
+---
+title: <%= component.name %>
+lead:  <%= component.description %>
+---
+      <!-- {{title}} -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="navbar-brand" href="#">{{uppercase title}}</a>
+            <ul class="nav pull-right"><li><a id="test" href="https://github.com/jonschlinkert/showup/">GitHub Repo</a></li></ul>
+          </div>
+        </div>
+      </div><!-- /{{title}} -->
+
+      {{! filler content }}
+      {{md './src/content/lorem-ipsum.md'}}
+
+      {{! initialize the plugin }}
+      <script>
+        $().showUp('.navbar');
+      </script>

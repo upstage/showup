@@ -1,0 +1,20 @@
+{
+  "name": "showup",
+  "description": "Very basic jQuery plugin for hiding navbar when scolling down, and showing it when scrolling up.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert/showup"
+  },
+  "devDependencies": {
+    "assemble": "~0.3.73",
+    "assemble-less": "~0.4.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "jquery plugin",
+    "navbar",
+    "scroll"
+  ]
+}

@@ -1,0 +1,14 @@
+# Metadata
+component:
+  name: <%= pkg.name %>
+  description: <%= pkg.description %>
+  styles: assets/css
+  scripts: assets/js
+
+# assemble task 
+flatten: true
+layout: src/layout.hbs
+partials: src/partials/*.hbs
+assets: assets
+ext: .html
+

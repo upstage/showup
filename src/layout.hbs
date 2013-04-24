@@ -1,0 +1,25 @@
+---
+stylesheets: 
+- bootstrap.css
+- component.css
+scripts: [jquery.js,<%= component.name %>.js]
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    {{#each stylesheets}}<link rel="stylesheet" href="{{../assets}}/css/{{.}}">
+    {{/each}}
+    {{#each scripts}}<script src="{{../assets}}/js/{{.}}"></script>
+    {{/each}}
+  </head>
+  <body style="padding-top: 80px;">
+    <div class="container">
+      <div class="page-header">
+        <h1>{{ title }}</h1>
+        <p class="lead">{{ lead }}</p>
+      </div>
+      {{> body }}
+    </div>
+  </body>
+</html>
