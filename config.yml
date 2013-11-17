@@ -1,10 +1,11 @@
 # Metadata
+pkg: <%= pkg %>
 component:
   name: <%= pkg.name %>
   description: <%= pkg.description %>
 
 # assemble task
 flatten: true
+partials: src/includes/*.hbs
 layout: src/layout.hbs
-assets: vendor
 ext: .html

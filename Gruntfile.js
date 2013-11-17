@@ -21,8 +21,8 @@ module.exports = function(grunt) {
       component: {
         options: grunt.file.readYAML('config.yml'),
         files: {
-          '_gh_pages/index.html': ['src/component.hbs'],
-          'index.html': ['src/component.hbs']
+          '_gh_pages/index.html': ['src/lorem-ipsum.md'],
+          'index.html': ['src/lorem-ipsum.md']
         }
       }
     }

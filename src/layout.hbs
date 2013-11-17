@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ title }}</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://getbootstrap.com/docs-assets/css/docs.css">
     <link rel="stylesheet" href="showup.css">
 
-    <!-- JavaScripts -->
-    <script src="assets/jquery.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="showup.js"></script>
   </head>
   <body style="padding-top: 80px;">
+
+    <!-- Main navigation -->
+    {{> navbar }}
+
     <div class="container">
-      <!-- Page Header -->
-      <div class="page-header">
-        <h1>{{ title }}</h1>
-        <p class="lead">{{ lead }}</p>
-      </div>
-
       <!-- Content -->
-      {{> body }}
+      {{#markdown}}
+        {{> body }}
+      {{/markdown}}
 
-      <!-- Back-to-top Example -->
-      <a href="#" class="btn back-to-top btn-light btn-fixed-bottom">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a>
-
-      <!-- Back-to-top Example -->
-      <a href="#" style="right: 70px;" class="btn back-to-top btn-dark btn-fixed-bottom">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a>
+      <!-- Back-to-top buttons -->
+      {{> buttons }}
     </div>
+
+    <!-- Showup Plugin -->
+    <script>
+      $().showUp('.navbar');
+      $().backup();
+    </script>
   </body>
 </html>
