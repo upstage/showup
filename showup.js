@@ -2,48 +2,64 @@
  * Showup.js
  * http://github.com/jonschlinkert/showup
  * Jon Schlinkert
- *
  */
+
+
 (function( $ ) {
   $.fn.showUp = function(ele) {
-    var target         = $(ele),
-        downClass      = 'navbar-hide',
-        upClass        = 'navbar-show',
-        previousScroll = 0;
+    var target         = $(ele);
+    var downClass      = 'navbar-hide';
+    var upClass        = 'navbar-show';
+    var btnHideShow    = '.btn-hide-show';
+    var hideOffset     = 110;
+    var previousScroll = 0;
 
     $(window).scroll(function () {
       // var currentScroll = $(this).scrollTop();
-      if ($(this).scrollTop() > 100) {
+      if ($(this).scrollTop() > hideOffset) {
         if ($(this).scrollTop() > previousScroll) {
           // Action on scroll down
-          target.removeClass(upClass).addClass(downClass).unbind('click');
+          target.removeClass(upClass).addClass(downClass);
         } else {
           // Action on scroll up
-          target.removeClass(downClass).addClass(upClass).unbind('click');
+          target.removeClass(downClass).addClass(upClass);
         }
       }
       previousScroll = $(this).scrollTop();
+    });
+
+    // Toggle visibility of target on click
+    $(btnHideShow).click(function () {
+      if (target.hasClass(downClass)) {
+        target.removeClass(downClass).addClass(upClass);
+      } else {
+        target.removeClass(upClass).addClass(downClass);
+      }
     });
   };
 })( jQuery );
 
 
+
 $(document).ready(function () {
-  var offset   = 220;
-  var duration = 500;
+  var duration      = 420;
+  var showOffset    = 220;
+  var btnFixed      = '.btn-fixed-bottom';
+  var btnToTopClass = '.back-to-top';
+
   $(window).scroll(function () {
-    if ($(this).scrollTop() > offset) {
-      $('.btn-fixed-bottom').fadeIn(duration);
+    if ($(this).scrollTop() > showOffset) {
+      $(btnFixed).fadeIn(duration);
     } else {
-      $('.btn-fixed-bottom').fadeOut(duration);
+      $(btnFixed).fadeOut(duration);
     }
   });
 
-  $('.back-to-top').click(function (event) {
+  $(btnToTopClass).click(function (event) {
     event.preventDefault();
     $('html, body').animate({
       scrollTop: 0
     }, duration);
     return false;
-  })
+  });
 });

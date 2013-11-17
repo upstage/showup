@@ -1,5 +1,5 @@
 /**
- * Showup Docs - jQuery plugin
+ * Showup jQuery plugin - demo styles
  * Copyright (c) 2013, Jon Schlinkert, contributors
  * Licensed under the MIT License
  */
@@ -46,6 +46,14 @@
  * Docs Buttons
  */
 
+/* Demo buttons are all <button> tags, so
+ * lets style these directly.
+ */
+button {
+  float: right !important;
+}
+
+
 /* Fixed button, bottom right */
 .btn-fixed-bottom {
   position: fixed;
@@ -54,6 +62,11 @@
   display: none;
 }
 
+
+/* Toggles navbar classes */
+.btn-hide-show {
+  margin-right: 10px;
+}
 
 
 /* Light theme */
@@ -93,3 +106,4 @@
   background-color: #39235A;
   border-color: #39235A;
 }
+
