@@ -6,10 +6,12 @@
     "name": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert/showup"
   },
+  "main": "showup.js",
   "devDependencies": {
     "grunt": "~0.4.1",
     "assemble": "~0.4.27",
-    "pretty": "~0.1.1"
+    "pretty": "~0.1.1",
+    "grunt-sync-pkg": "~0.1.1"
   },
   "keywords": [
     "jquery plugin",

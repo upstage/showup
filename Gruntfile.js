@@ -30,7 +30,8 @@ module.exports = function(grunt) {
 
   // Load Assemble plugins to build demo HTML.
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-sync-pkg');
 
   // Default tasks to be run.
-  grunt.registerTask('default', ['assemble']);
+  grunt.registerTask('default', ['assemble', 'sync']);
 };
