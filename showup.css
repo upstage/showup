@@ -1,0 +1,95 @@
+/**
+ * Showup Docs - jQuery plugin
+ * Copyright (c) 2013, Jon Schlinkert, contributors
+ * Licensed under the MIT License
+ */
+
+
+/**
+ * Docs navbar transitions effects
+ */
+
+.navbar {
+  -webkit-transition: -webkit-transform .5s .5s, background .5s, color .1s;
+     -moz-transition:    -moz-transform .5s .5s, background .5s, color .1s;
+       -o-transition:      -o-transform .5s .5s, background .5s, color .1s;
+          transition:         transform .5s .5s, background .5s, color .1s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.navbar-show {
+  opacity: 1;
+  -webkit-transition: -webkit-transform .25s, background 2s, color .3s;
+     -moz-transition:    -moz-transform .25s, background 2s, color .3s;
+       -o-transition:      -o-transform .25s, background 2s, color .3s;
+          transition:         transform .25s, background 2s, color .3s;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.navbar-hide {
+  opacity: 0;
+  -webkit-transition: -webkit-transform .2s, background .3s, color .3s, opacity 0 .3s;
+     -moz-transition:    -moz-transform .2s, background .3s, color .3s, opacity 0 .3s;
+       -o-transition:      -o-transform .2s, background .3s, color .3s, opacity 0 .3s;
+          transition:         transform .2s, background .3s, color .3s, opacity 0 .3s;
+  -webkit-transform: translate(0, -80px);
+      -ms-transform: translate(0, -80px);
+          transform: translate(0, -80px);
+}
+
+
+/**
+ * Docs Buttons
+ */
+
+/* Fixed button, bottom right */
+.btn-fixed-bottom {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  display: none;
+}
+
+
+
+/* Light theme */
+.btn-light {
+  color: #555;
+  background-color: rgba(0, 0, 0,.1);
+}
+.btn-light:hover {
+  color: #111;
+  background-color: rgba(0, 0, 0,.25);
+}
+
+/* Dark theme */
+.btn-dark {
+  color: #fff;
+  background-color: rgba(0, 0, 0,.5);
+}
+.btn-dark:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0,.9);
+}
+
+
+
+/* Buttons displayed throughout the content */
+.btn-showup {
+  position: relative;
+  color: #fff;
+  font-weight: normal;
+  background-color: #463265;
+  border-color: #3F2961;
+}
+.btn-showup:hover,
+.btn-showup:focus {
+  color: #fff;
+  outline: none;
+  background-color: #39235A;
+  border-color: #39235A;
+}
