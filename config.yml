@@ -5,10 +5,9 @@ component:
   styles: assets/css
   scripts: assets/js
 
-# assemble task 
+# assemble task
 flatten: true
 layout: src/layout.hbs
 partials: src/partials/*.hbs
 assets: assets
 ext: .html
-

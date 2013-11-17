@@ -1,25 +1,24 @@
+/**
+ * Showup - jQuery plugin
+ * Copyright (c) 2013, Jon Schlinkert, contributors
+ * Licensed under the MIT License
+ */
 
 module.exports = function(grunt) {
-
   'use strict';
+
+  var prettify = require('pretty');
 
   // Project configuration.
   grunt.initConfig({
-    bootstrap: grunt.file.readYAML('src/bootstrap.yml'),
-    pkg:       grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON('package.json'),
 
-    less: {
-      options: {
-        paths: ['<%= bootstrap.base %>'],
-        require: '<%= bootstrap.globals %>',
-        libs: './src/bootstrap',
-      },
-      bootstrap: {
-        src: ['<%= bootstrap.bundle.custom %>'],
-        dest: '<%= component.styles %>/bootstrap.css'
-      }
-    },
+
+    // Build demo HTML
     assemble: {
+      options: {
+        postprocess: prettify
+      },
       component: {
         options: grunt.file.readYAML('config.yml'),
         files: {
@@ -29,10 +28,9 @@ module.exports = function(grunt) {
     }
   });
 
-  // Load npm plugins to provide necessary tasks.
+  // Load Assemble plugins to build demo HTML.
   grunt.loadNpmTasks('assemble');
-  grunt.loadNpmTasks('assemble-less');
 
   // Default tasks to be run.
-  grunt.registerTask('default', ['assemble', 'less']);
+  grunt.registerTask('default', ['assemble']);
 };

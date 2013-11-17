@@ -2,20 +2,35 @@
 title: <%= component.name %>
 lead:  <%= component.description %>
 ---
-      <!-- {{title}} -->
-      <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <a class="navbar-brand" href="#">{{uppercase title}}</a>
-            <ul class="nav pull-right"><li><a id="test" href="https://github.com/jonschlinkert/showup/">GitHub Repo</a></li></ul>
-          </div>
-        </div>
-      </div><!-- /{{title}} -->
+<!-- Navbar -->
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./" class="navbar-brand">{{uppercase title}}</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="https://github.com/jonschlinkert/showup/">GitHub Repo</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      {{! filler content }}
-      {{md './src/content/lorem-ipsum.md'}}
+<!-- Content -->
+{{md 'src/lorem-ipsum.md'}}
 
-      {{! initialize the plugin }}
-      <script>
-        $().showUp('.navbar');
-      </script>
+<!-- Showup Plugin -->
+<script>
+  $().showUp('.navbar');
+  $().backup();
+</script>
+
+

@@ -1,0 +1,35 @@
+{
+  "name": "showup",
+  "title": "showup",
+  "version": "0.1.1",
+  "description": "Basic jQuery plugin for hiding navbar when scolling down, and showing it when scrolling up.",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "maintainers": [
+    {
+      "name": "Jon Schlinkert",
+      "url": "https://github.com/jonschlinkert"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/upstage/showup.js/blob/master/LICENSE.txt"
+    }
+  ],
+  "download": "https://github.com/upstage/showup.js/archive/master.zip",
+  "homepage": "https://github.com/upstage/showup.js",
+  "bugs": "https://github.com/upstage/showup.js/issues",
+  "docs": "https://github.com/upstage/showup.js",
+  "dependencies": {
+    "jquery": ">=1.8"
+  },
+  "keywords": [
+    "hide",
+    "show",
+    "navigation",
+    "scroll"
+  ]
+}
