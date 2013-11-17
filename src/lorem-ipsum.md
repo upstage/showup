@@ -9,7 +9,7 @@ Cow corned beef id enim pork belly ut. Turkey tempor officia labore salami duis 
 
 ## Pork loin chicken
 
-<button type="button" class="btn btn-lg btn-showup back-to-top">Show Navbar</button>
+<button type="button" class="btn btn-lg btn-showup back-to-top">Back to top</button>
 
 In deserunt venison doner velit cow pastrami magna dolore ut jerky proident esse laborum. Fatback strip steak biltong tri-tip beef pork belly spare ribs in ut capicola. Sunt qui t-bone jerky est culpa. Deserunt duis adipisicing ullamco ex, eiusmod beef salami labore non chuck occaecat tenderloin shank cillum. Quis t-bone hamburger pancetta aliqua dolor. Magna eu ground round aliqua.
 
@@ -20,7 +20,7 @@ Non chicken esse sint meatball. Fugiat consectetur beef ribs deserunt voluptate 
 
 ### Pariatur pig flank
 
-<button type="button" class="btn btn-lg btn-showup back-to-top">Show Navbar</button>
+<button type="button" class="btn btn-lg btn-showup back-to-top">Back to top</button>
 
 Vvoluptate ground round ham hock veniam reprehenderit fatback capicola salami. Ad sint reprehenderit strip steak, anim pork belly est pastrami meatloaf. Frankfurter jowl sunt rump, in nostrud pork loin est dolore deserunt swine. Ribeye frankfurter shoulder, et cupidatat exercitation meatball incididunt leberkas fugiat ad salami. Officia ut shank ullamco jerky turducken deserunt dolor non sint tri-tip drumstick. Bacon id frankfurter officia occaecat. Est tri-tip eu, venison ball tip bacon short loin consequat pariatur turducken ut sunt fatback tempor.
 
@@ -39,7 +39,7 @@ Ribeye commodo shoulder chicken meatball ex ut in consectetur id spare ribs dese
 
 ## Leberkas in hamburger
 
-<button type="button" class="btn btn-lg btn-showup back-to-top">Show Navbar</button>
+<button type="button" class="btn btn-lg btn-showup back-to-top">Back to top</button>
 
 Sunt drumstick shoulder excepteur shankle pariatur ad sed esse ribeye quis. In ball tip eu, venison doner eiusmod qui officia irure sirloin. Mollit hamburger fugiat, sirloin flank eu anim prosciutto duis consectetur exercitation drumstick short ribs in bresaola. Eiusmod short ribs laborum reprehenderit eu filet mignon elit.
 
@@ -51,7 +51,7 @@ Adipisicing shoulder excepteur, ut laboris drumstick meatball ea minim ham turdu
 
 ### Pariatur pig flank
 
-<button type="button" class="btn btn-lg btn-showup back-to-top">Show Navbar</button>
+<button type="button" class="btn btn-lg btn-showup back-to-top">Back to top</button>
 
 Vvoluptate ground round ham hock veniam reprehenderit fatback capicola salami. Ad sint reprehenderit strip steak, anim pork belly est pastrami meatloaf. Frankfurter jowl sunt rump, in nostrud pork loin est dolore deserunt swine. Ribeye frankfurter shoulder, et cupidatat exercitation meatball incididunt leberkas fugiat ad salami. Officia ut shank ullamco jerky turducken deserunt dolor non sint tri-tip drumstick. Bacon id frankfurter officia occaecat. Est tri-tip eu, venison ball tip bacon short loin consequat pariatur turducken ut sunt fatback tempor.
 
@@ -69,7 +69,7 @@ Ribeye commodo shoulder chicken meatball ex ut in consectetur id spare ribs dese
 
 ## Leberkas in hamburger
 
-<button type="button" class="btn btn-lg btn-showup back-to-top">Show Navbar</button>
+<button type="button" class="btn btn-lg btn-showup back-to-top">Back to top</button>
 
 Sunt drumstick shoulder excepteur shankle pariatur ad sed esse ribeye quis. In ball tip eu, venison doner eiusmod qui officia irure sirloin. Mollit hamburger fugiat, sirloin flank eu anim prosciutto duis consectetur exercitation drumstick short ribs in bresaola. Eiusmod short ribs laborum reprehenderit eu filet mignon elit.
 

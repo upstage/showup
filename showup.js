@@ -2,8 +2,9 @@
  * Showup.js
  * http://github.com/jonschlinkert/showup
  * Jon Schlinkert
- *
  */
+
+
 (function( $ ) {
   $.fn.showUp = function(ele) {
     var target         = $(ele),

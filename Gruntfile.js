@@ -13,7 +13,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-
     // Build demo HTML
     assemble: {
       options: {
@@ -22,6 +21,7 @@ module.exports = function(grunt) {
       component: {
         options: grunt.file.readYAML('config.yml'),
         files: {
+          '_gh_pages/index.html': ['src/component.hbs'],
           'index.html': ['src/component.hbs']
         }
       }
