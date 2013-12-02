@@ -25,13 +25,22 @@ module.exports = function(grunt) {
           'index.html': ['src/lorem-ipsum.md']
         }
       }
-    }
+    },
+    copy: {
+      assets: {
+        files: [
+          {expand: true, src: ['*.{js,css}'], dest: '_gh_pages/'}
+        ]
+      }
+    },
+
   });
 
   // Load Assemble plugins to build demo HTML.
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sync-pkg');
 
   // Default tasks to be run.
-  grunt.registerTask('default', ['assemble', 'sync']);
+  grunt.registerTask('default', ['assemble', 'copy', 'sync']);
 };

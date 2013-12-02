@@ -11,7 +11,8 @@
     "grunt": "~0.4.1",
     "assemble": "~0.4.27",
     "pretty": "~0.1.1",
-    "grunt-sync-pkg": "~0.1.1"
+    "grunt-sync-pkg": "~0.1.1",
+    "grunt-contrib-copy": "~0.4.1"
   },
   "keywords": [
     "jquery plugin",

@@ -63,6 +63,11 @@ button {
 }
 
 
+/* Toggles navbar classes */
+.btn-hide-show {
+  margin-right: 10px;
+}
+
 
 /* Light theme */
 .btn-light {
@@ -94,6 +99,7 @@ button {
   background-color: #463265;
   border-color: #3F2961;
 }
+.btn:focus,
 .btn-showup:hover,
 .btn-showup:focus {
   color: #fff;
@@ -101,3 +107,4 @@ button {
   background-color: #39235A;
   border-color: #39235A;
 }
+
