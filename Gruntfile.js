@@ -29,6 +29,10 @@ module.exports = function(grunt) {
         src: ['*.{js,css,html}'],
         dest: '_gh_pages/'
       }
+    },
+
+    sync: {
+      options: {alt: 'showup.jquery.json'}
     }
   });
 

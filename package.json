@@ -1,7 +1,7 @@
 {
   "name": "showup",
   "description": "Basic jQuery plugin for hiding navbar when scolling down, and showing it when scrolling up.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert/showup"
