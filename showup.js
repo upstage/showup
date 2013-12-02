@@ -12,8 +12,8 @@
     options = options || {};
 
     var target         = $(ele);
-    var downClass      = options.downClass   || 'navbar-hide';
-    var upClass        = options.upClass     || 'navbar-show';
+    var down           = options.down        || 'navbar-hide';
+    var up             = options.up          || 'navbar-show';
     var btnHideShow    = options.btnHideShow || '.btn-hide-show';
     var hideOffset     = options.offset      || 110;
     var previousScroll = 0;
@@ -23,10 +23,10 @@
       if ($(this).scrollTop() > hideOffset) {
         if ($(this).scrollTop() > previousScroll) {
           // Action on scroll down
-          target.removeClass(upClass).addClass(downClass);
+          target.removeClass(up).addClass(down);
         } else {
           // Action on scroll up
-          target.removeClass(downClass).addClass(upClass);
+          target.removeClass(down).addClass(up);
         }
       }
       previousScroll = $(this).scrollTop();
@@ -34,10 +34,10 @@
 
     // Toggle visibility of target on click
     $(btnHideShow).click(function () {
-      if (target.hasClass(downClass)) {
-        target.removeClass(downClass).addClass(upClass);
+      if (target.hasClass(down)) {
+        target.removeClass(down).addClass(up);
       } else {
-        target.removeClass(upClass).addClass(downClass);
+        target.removeClass(up).addClass(down);
       }
     });
   };
