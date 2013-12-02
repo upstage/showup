@@ -1,7 +1,9 @@
 /*
- * Showup.js
+ * Showup.js jQuery Plugin
  * http://github.com/jonschlinkert/showup
- * Jon Schlinkert
+ *
+ * Copyright (c) 2013 Jon Schlinkert, contributors
+ * Licensed under the MIT License (MIT).
  */
 
 
