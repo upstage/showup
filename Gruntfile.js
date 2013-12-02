@@ -7,8 +7,6 @@
 module.exports = function(grunt) {
   'use strict';
 
-  var prettify = require('pretty');
-
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -16,24 +14,22 @@ module.exports = function(grunt) {
     // Build demo HTML
     assemble: {
       options: {
-        postprocess: prettify
+        postprocess: require('pretty')
       },
       component: {
-        options: grunt.file.readYAML('config.yml'),
+        options: grunt.file.readYAML('_config.yml'),
         files: {
-          '_gh_pages/index.html': ['src/lorem-ipsum.md'],
-          'index.html': ['src/lorem-ipsum.md']
+          'index.html': ['src/lorem.md'],
+          'tall.html':  ['src/ipsum.md']
         }
       }
     },
     copy: {
       assets: {
-        files: [
-          {expand: true, src: ['*.{js,css}'], dest: '_gh_pages/'}
-        ]
+        src: ['*.{js,css,html}'],
+        dest: '_gh_pages/'
       }
-    },
-
+    }
   });
 
   // Load Assemble plugins to build demo HTML.

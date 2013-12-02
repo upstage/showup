@@ -6,12 +6,14 @@
 
 
 (function( $ ) {
-  $.fn.showUp = function(ele) {
+  $.fn.showUp = function(ele, options) {
+    options = options || {};
+
     var target         = $(ele);
-    var downClass      = 'navbar-hide';
-    var upClass        = 'navbar-show';
-    var btnHideShow    = '.btn-hide-show';
-    var hideOffset     = 110;
+    var downClass      = options.downClass   || 'navbar-hide';
+    var upClass        = options.upClass     || 'navbar-show';
+    var btnHideShow    = options.btnHideShow || '.btn-hide-show';
+    var hideOffset     = options.offset      || 110;
     var previousScroll = 0;
 
     $(window).scroll(function () {
@@ -39,8 +41,7 @@
   };
 })( jQuery );
 
-
-
+// TODO: make customizable
 $(document).ready(function () {
   var duration      = 420;
   var showOffset    = 220;
@@ -63,3 +64,4 @@ $(document).ready(function () {
     return false;
   });
 });
+

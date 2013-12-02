@@ -31,7 +31,10 @@
 
     <!-- Showup Plugin -->
     <script>
-      $().showUp('.navbar');
+      $().showUp('.navbar', {
+        upClass: '{{upClass}}',
+        downClass: '{{downClass}}'
+      });
     </script>
   </body>
 </html>
